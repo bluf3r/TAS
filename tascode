@@ -1,0 +1,35 @@
+#!/usr/bin/python
+"""
+True air speed calculator !
+"""
+__author__ = "Luiz Fernando Barbosa"
+
+import sys
+
+class Valor:
+    tas = 0.000
+    ias = 0.000
+    cons = 0.02
+    altm = 0.000
+    div = 1000
+    
+    def valor1(self):
+        try:
+            self.ias = input('Informe a Indicated Air Speed: ')
+            ias = self.ias
+            return ias
+        self.valor1()
+
+    def valor2(self):
+        try:
+            self.altm = input('Informe a Altitude Média: ')
+            altm = self.açtm
+            return altm
+        self.valor2()
+
+class Resultado:
+    
+    def resultado(self, altm, ias):
+         tas = ias + (ias*cons*altm/div)
+         
+        print('Resultado: %d, kts !,') %(tas)
