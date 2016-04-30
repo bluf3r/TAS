@@ -33,3 +33,5 @@ class Resultado:
          tas = ias + (ias*cons*altm/div)
          
         print('Resultado: %d, kts !,') %(tas)
+        
+        break
